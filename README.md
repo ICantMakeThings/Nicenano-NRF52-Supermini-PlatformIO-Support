@@ -35,3 +35,12 @@ Works with bluefruit and and all the fun lib's!
 ## Extra info
 I didnt do a pull req or anything bc it'd require making 2 pull requests in 2 diferent repo's which.. idk wouldent work i think. plus idk how to.
 If you wanna do a pull req or add it into platformio then go right ahead. ik thisll help at least 1 person.
+
+SPI
+`P0.02 (SCK),
+P0.29 (MOSI),
+P0.31 (MISO)`
+
+I2C
+`P1.01 (SDA),
+P1.02 (SCL)`
