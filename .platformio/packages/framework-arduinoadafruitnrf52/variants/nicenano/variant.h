@@ -68,6 +68,14 @@ extern "C"
 #define PIN_114  46  // P1.14 (GPIO 114)
 #define PIN_115  47  // P1.15 (GPIO 115)
 
+#ifndef LED_BUILTIN
+#define LED_BUILTIN PIN_015
+#endif
+
+#ifndef LED_BLUE
+#define LED_BLUE PIN_114 //added so bluefruit compiles. not in use, 
+#endif                  //if you do wanna use it, change the PIN_114 to whatever you want
+
 // I2C Pins
 /*
 #define PIN_SDA   PIN_022  // add whichever pin you want, any pin works
