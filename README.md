@@ -42,8 +42,8 @@ P0.29 (MOSI),
 P0.31 (MISO)`
 
 I2C
-`P1.01 (SDA),
-P1.02 (SCL)`
+`P1.01 (SCL),
+P1.02 (SDA)`
 
 Serial1
 `P0.06 (TX)
