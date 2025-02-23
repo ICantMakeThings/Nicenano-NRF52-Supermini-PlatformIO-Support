@@ -44,3 +44,8 @@ P0.31 (MISO)`
 I2C
 `P1.01 (SDA),
 P1.02 (SCL)`
+
+Serial1
+`P0.06 (TX)
+P0.08 (RX)`
+Serial1.begin(9600);
