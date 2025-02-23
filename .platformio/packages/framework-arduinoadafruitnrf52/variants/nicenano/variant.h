@@ -52,8 +52,8 @@ extern "C"
 #define PIN_030  30  // P0.30
 #define PIN_031  31  // P0.31 (MISO)
 #define PIN_100  32  // P1.00
-#define PIN_101  33  // P1.01 (SDA) (SPECIFY &Wire)
-#define PIN_102  34  // P1.02 (SCL) (SPECIFY &Wire)
+#define PIN_101  33  // P1.01 (SCL) (SPECIFY &Wire)
+#define PIN_102  34  // P1.02 (SDA) (SPECIFY &Wire)
 #define PIN_103  35  // P1.03
 #define PIN_104  36  // P1.04
 #define PIN_105  37  // P1.05
@@ -78,8 +78,8 @@ extern "C"
 
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA 33
-#define PIN_WIRE_SCL 34
+#define PIN_WIRE_SDA 34
+#define PIN_WIRE_SCL 33
 
 #define SPI_INTERFACES_COUNT 1
 
