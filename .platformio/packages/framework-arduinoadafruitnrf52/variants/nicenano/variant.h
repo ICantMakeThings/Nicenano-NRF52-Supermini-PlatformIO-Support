@@ -19,8 +19,8 @@ extern "C"
 #endif // __cplusplus
 
 #define PINS_COUNT 48
-#define PIN_SERIAL1_TX  0   // P0.00
-#define PIN_SERIAL1_RX  1   // P0.01
+#define PIN_SERIAL1_TX  6   // P0.00
+#define PIN_SERIAL1_RX  8   // P0.01
 #define PIN_002  2   // P0.02 (SCK)
 #define PIN_003  3   // P0.03
 #define PIN_004  4   // P0.04
