@@ -1,5 +1,6 @@
 # Add NICENANO / NRF52 SUPERMINI to PlatformIO
-
+![image](https://github.com/user-attachments/assets/8b973aa3-b75f-4b1c-8cd1-29e77cf1d793)
+(I will change SPI some day bc its in the way of the only 3 pins with ADC, my mistake. or go to the config `variant.h` and change it urself)
 ## INSTALL
 
 
