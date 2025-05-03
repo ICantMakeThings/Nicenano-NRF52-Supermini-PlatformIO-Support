@@ -37,6 +37,11 @@ Works with bluefruit and and all the fun lib's!
 I didnt do a pull req or anything bc it'd require making 2 pull requests in 2 diferent repo's which.. idk wouldent work i think. plus idk how to.
 If you wanna do a pull req or add it into platformio then go right ahead. ik thisll help at least 1 person.
 
+#### To not need to worry about support, make sure to add this library in platformio.ini:
+
+`lib_deps = 
+	https://github.com/adafruit/Adafruit_nRF52_Arduino`
+
 SPI
 `P0.02 (SCK),
 P0.29 (MOSI),
