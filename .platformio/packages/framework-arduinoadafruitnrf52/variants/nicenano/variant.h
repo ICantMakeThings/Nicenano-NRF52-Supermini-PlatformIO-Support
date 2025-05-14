@@ -21,7 +21,7 @@ extern "C"
 #define PINS_COUNT 48
 #define PIN_SERIAL1_TX  6   // P0.00
 #define PIN_SERIAL1_RX  8   // P0.01
-#define PIN_002  2   // P0.02 (SCK)
+#define PIN_002  2   // P0.02
 #define PIN_003  3   // P0.03
 #define PIN_004  4   // P0.04
 #define PIN_005  5   // P0.05
@@ -48,25 +48,25 @@ extern "C"
 #define PIN_026  26  // P0.26
 #define PIN_027  27  // P0.27
 #define PIN_028  28  // P0.28
-#define PIN_029  29  // P0.29 (MOSI)
+#define PIN_029  29  // P0.29
 #define PIN_030  30  // P0.30
-#define PIN_031  31  // P0.31 (MISO)
+#define PIN_031  31  // P0.31
 #define PIN_100  32  // P1.00
-#define PIN_101  33  // P1.01 (SCL) (SPECIFY &Wire)
-#define PIN_102  34  // P1.02 (SDA) (SPECIFY &Wire)
+#define PIN_101  33  // P1.01
+#define PIN_102  34  // P1.02
 #define PIN_103  35  // P1.03
-#define PIN_104  36  // P1.04
+#define PIN_104  36  // P1.04 (SDA) (SPECIFY &Wire)
 #define PIN_105  37  // P1.05
-#define PIN_106  38  // P1.06
-#define PIN_107  39  // P1.07 (ss) (uncomment line static const....)
+#define PIN_106  38  // P1.06 (SCL) (SPECIFY &Wire)
+#define PIN_107  39  // P1.07 (ss) (uncomment line 90 to use)
 #define PIN_108  40  // P1.08
 #define PIN_109  41  // P1.09
 #define PIN_110  42  // P1.10
-#define PIN_111  43  // P1.11
+#define PIN_111  43  // P1.11 (SCK)
 #define PIN_112  44  // P1.12
-#define PIN_113  45  // P1.13
+#define PIN_113  45  // P1.13 (MOSI)
 #define PIN_114  46  // P1.14
-#define PIN_115  47  // P1.15
+#define PIN_115  47  // P1.15 (MISO)
 
 #ifndef LED_BUILTIN
 #define LED_BUILTIN PIN_015
@@ -78,14 +78,14 @@ extern "C"
 
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA 34
-#define PIN_WIRE_SCL 33
+#define PIN_WIRE_SDA 36
+#define PIN_WIRE_SCL 38
 
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO 31
-#define PIN_SPI_MOSI 29
-#define PIN_SPI_SCK 2
+#define PIN_SPI_MISO 47
+#define PIN_SPI_MOSI 45
+#define PIN_SPI_SCK 43
 
 //static const uint8_t SS   = 39 ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
