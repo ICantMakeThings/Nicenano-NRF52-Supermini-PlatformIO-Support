@@ -43,15 +43,23 @@ If you wanna do a pull req or add it into platformio then go right ahead. ik thi
 	https://github.com/adafruit/Adafruit_nRF52_Arduino`
 
 SPI
-`P0.02 (SCK),
-P0.29 (MOSI),
-P0.31 (MISO)`
+`P1.11 (SCK),
+P1.13 (MOSI),
+P1.15 (MISO)`
 
 I2C
-`P1.01 (SCL),
-P1.02 (SDA)`
+`P1.06 (SCL),
+P1.04 (SDA)`
 
 Serial1
 `P0.06 (TX)
 P0.08 (RX)`
 Serial1.begin(9600);
+
+IMPORTANT! 
+P0.02 (SCK) moved to P1.11 (SCK)
+P0.29 (MOSI) to P1.13 (MOSI)
+P0.31 (MISO) to P1.15 (MISO)
+P1.01 (SCL) to P1.06 (SCL)
+P1.02 (SDA) to P1.04 (SDA) 
+Why? So I2C is on a outer pin, and SPI was on the only 3 ADC pins. now you can develop easier and use ADC & SPI
