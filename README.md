@@ -26,6 +26,7 @@
 - make sure to check the "Apply this action to all files and folders"
 
 What about if theres a update? delete the files and do the same, youll manage.
+#### Note, if you dont have hidden files shown, you wont see the .platformio folder downloaded. (on linux at least)
 
 ## USAGE
 This'll work with any one of thoes aliexpress nrf52840 devkits. they have silkscreens of like, 
@@ -56,10 +57,10 @@ Serial1
 P0.08 (RX)`
 Serial1.begin(9600);
 
-IMPORTANT! 
+IMPORTANT! As of the latest update of the .platformio folder:
 P0.02 (SCK) moved to P1.11 (SCK)
 P0.29 (MOSI) to P1.13 (MOSI)
 P0.31 (MISO) to P1.15 (MISO)
 P1.01 (SCL) to P1.06 (SCL)
 P1.02 (SDA) to P1.04 (SDA) 
-Why? So I2C is on a outer pin, and SPI was on the only 3 ADC pins. now you can develop easier and use ADC & SPI
+Why? So I2C is on a outer pin, and SPI was on the only 3 ADC pins. now you can develop easier and use ADC & SPI at once.
