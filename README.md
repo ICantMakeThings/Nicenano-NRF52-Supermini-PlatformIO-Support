@@ -64,3 +64,17 @@ P0.31 (MISO) to P1.15 (MISO)
 P1.01 (SCL) to P1.06 (SCL)
 P1.02 (SDA) to P1.04 (SDA) 
 Why? So I2C is on a outer pin, and SPI was on the only 3 ADC pins. now you can develop easier and use ADC & SPI at once.
+
+More info:
+
+#### how do you change the i2c pins for example? 
+
+if you want to change where i2c or spi pins are, you can go to `variant.h` which is in:
+`.platformio/packages/framework-arduinoadafruitnrf52/variants/nicenano/variant.h`
+
+currently its set to:
+`#define PIN_WIRE_SDA 36
+#define PIN_WIRE_SCL 38`
+
+scroll up in the file, youll see `#define PIN_104  36  // P1.04` so 36 is `PIN_104`, wanna change it to `PIN_102`? youll see
+`#define PIN_102  34  // P1.02` that the definition is `34` so just change `#define PIN_WIRE_SDA 36` to `#define PIN_WIRE_SDA 34`
