@@ -1,3 +1,16 @@
+# zephyr support
+To use zephyr you need to do the following first (If youve never used zephyr with a nrf DK yet):
+make a new project, call it whatever. select the board nrf52840_dk and Franework should be zephyr
+next in vscode open terminal from the bottom. put this command in:
+pip install -r ~/.platformio/packages/framework-zephyr/scripts/requirements.txt
+once done, close platformio and do the normal install instructions that is found lower.
+
+**Note: WIP. Might not work.**
+
+
+
+
+
 # Add NICENANO / NRF52 SUPERMINI to PlatformIO
 ![Pinout](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/blob/main/ICMTPINOUTNRF52840.svg)
 
