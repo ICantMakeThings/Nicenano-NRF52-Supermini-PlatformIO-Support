@@ -70,6 +70,6 @@
     "require_upload_port": true,
     "wait_for_upload_port": true
   },
-  "url": "https://nicekeyboards.com/nice-nano",
-  "vendor": "Nice!Keyboards"
+  "url": "https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support",
+  "vendor": "Aliexpress"
 }
