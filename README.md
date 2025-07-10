@@ -8,6 +8,8 @@ This'll work with any one of thoes aliexpress nrf52840 devkits. they have silksc
 I think thats easy enough...
 Works with bluefruit and and all the fun lib's!
 
+**It seems like you need to press upload twice for it to upload. just a note,**
+
 #### Make sure to add this library in platformio.ini:
 
 `lib_deps = 
