@@ -68,3 +68,12 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
 ![image](https://github.com/user-attachments/assets/e9d5e8df-f2aa-43e5-a4c5-737aa5b28ad9)
 
 - make sure to check the "Apply this action to all files and folders"
+
+
+## Extra Info
+
+Why does my nRF take so much power? Look at [this](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/issues/2#issuecomment-3163524724)
+
+I have a Zephyr branch but there is also something about this board on there [website](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
+
+If you want to use n-able, here is what to put in [platformio.ini](https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840?tab=readme-ov-file#updated-usage-for-pro-micro-nrf52840)
