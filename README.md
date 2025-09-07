@@ -72,7 +72,8 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
 
 ## Extra Info
 
-Why does my nRF take so much power? Look at [this](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/issues/2#issuecomment-3163524724)
+Why does my nRF take so much power?
+Most likely because the charging IC is very leaky, if you want to use as little power as possible, use the "VDD" smd pad in the bottom side of the board, where the debugging pins are. 
 
 I have a Zephyr branch but there is also something about this board on there [website](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
 
