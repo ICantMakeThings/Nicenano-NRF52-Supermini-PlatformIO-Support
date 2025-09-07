@@ -3,7 +3,9 @@
 
 
 ## USAGE
-This'll work with any one of thoes aliexpress nrf52840 devkits. they have silkscreens of like, 
+This'll work with any one of thoes aliexpress nrf52840 devkits.
+like; TENSTAR ROBOT ProMicro NRF52840
+they have silkscreens of like, 
 102 for eg, which corresponds to the physical pin P1.02. In firmware you define it as PIN_102 eg. `digitalWrite(PIN_102, HIGH);`
 I think thats easy enough...
 Works with bluefruit and and all the fun lib's!
