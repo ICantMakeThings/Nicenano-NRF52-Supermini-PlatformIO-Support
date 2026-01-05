@@ -52,6 +52,7 @@ scroll up in the file, youll see `#define PIN_104  36  // P1.04` so 36 is `PIN_1
 
 
 ## INSTALL
+#### Option 1
 Before installing, make sure PlatformIO is fully installed, and so is nrf52 package, (make a project using any of the adafruit nrf52840 boards, build it, and you can follow the next steps: 
 
 - Download ZIP 
@@ -75,12 +76,35 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
 
 - make sure to check the "Apply this action to all files and folders"
 
+#### Option 2
+
+* clone the source code using git
+  `git clone https://github.com/bertrik/nicenano-example`
+* enter the arduino source tree
+  `cd nicenano-example/supermini`
+* create python virtual env
+  `python3 -m venv .venv`
+* activate the virtual env
+  `source .venv/bin/activate`
+* install platformio
+  `pip3 install platformio`
+* build the example program
+  `pio run`
 
 ## Extra Info
 
 Why does my nRF take so much power?
 Most likely because the charging IC is very leaky, if you want to use as little power as possible, use the "VDD" smd pad in the bottom side of the board, where the debugging pins are. 
 
-I have a Zephyr branch but there is also something about this board on there [website](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
+Zephyr = [here](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
 
-If you want to use n-able, here is what to put in [platformio.ini](https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840?tab=readme-ov-file#updated-usage-for-pro-micro-nrf52840)
+If you want to use n-able:
+```
+[env:pro_micro_nrf52840]
+platform = https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840.git#master
+board = pro_micro_nrf52840
+framework = arduino
+
+lib_deps =
+  https://github.com/h2zero/NimBLE-Arduino.git#master
+```
