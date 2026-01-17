@@ -1,5 +1,6 @@
 # Add NICENANO / NRF52 SUPERMINI to PlatformIO
 ![Pinout](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/blob/main/ICMTPINOUTNRF52840.svg)
+<img width="1322" height="891" alt="image" src="https://github.com/user-attachments/assets/a486b65d-29d1-4438-9c63-7d7d08bc4ee4" />
 
 
 ## USAGE
