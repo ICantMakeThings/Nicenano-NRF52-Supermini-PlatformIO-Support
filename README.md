@@ -95,6 +95,19 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
 * build the example program
   `pio run`
 
+#### Once done:
+The .ini is:
+```
+[env:nicenano]
+platform = nordicnrf52
+board = nicenano
+framework = arduino
+lib_deps =  https://github.com/adafruit/Adafruit_nRF52_Arduino
+```
+and the name of the board is:
+<img width="533" height="49" alt="image" src="https://github.com/user-attachments/assets/36a89642-3c58-4cb8-9baf-9f258f2c1423" />
+
+
 ## Extra Info
 
 Why does my nRF take so much power?
