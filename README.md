@@ -83,10 +83,13 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
   `git clone https://github.com/bertrik/nicenano-example`
 * enter the arduino source tree
   `cd nicenano-example/supermini`
+  (for windows I think it's `\` instead of `/`) 
 * create python virtual env
   `python3 -m venv .venv`
+  (on windows change python3 to `python3.13` or whatever specific version you have) 
 * activate the virtual env
   `source .venv/bin/activate`
+  (on windows it's `.venv\Scripts\activate`) 
 * install platformio
   `pip3 install platformio`
 * build the example program
