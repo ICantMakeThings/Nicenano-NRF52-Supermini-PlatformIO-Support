@@ -125,3 +125,5 @@ framework = arduino
 lib_deps =
   https://github.com/h2zero/NimBLE-Arduino.git#master
 ```
+
+##### If you have any simple projects, please consider opening a PR to add onto the [Platformio Example code](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/tree/main/Platformio%20Example%20code).
