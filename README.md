@@ -54,6 +54,21 @@ scroll up in the file, youll see `#define PIN_104  36  // P1.04` so 36 is `PIN_1
 
 ## INSTALL
 #### Option 1
+
+**Linux / macOS**
+
+```bash
+curl -fsSL https://scr.icmt.cc/nicenano.sh | bash
+```
+
+**Windows PowerShell**
+
+```powershell
+iwr https://scr.icmt.cc/nicenano.ps1 -useb | iex
+```
+
+
+#### Option 2
 Before installing, make sure PlatformIO is fully installed, and so is nrf52 package, (make a project using any of the adafruit nrf52840 boards, build it, and you can follow the next steps: 
 
 - Download ZIP 
@@ -77,7 +92,7 @@ Before installing, make sure PlatformIO is fully installed, and so is nrf52 pack
 
 - make sure to check the "Apply this action to all files and folders"
 
-#### Option 2
+#### Option 3
 
 * clone the source code using git
   `git clone https://github.com/bertrik/nicenano-example`
